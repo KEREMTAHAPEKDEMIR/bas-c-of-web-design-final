@@ -1,0 +1,255 @@
+.footer .enalt p{
+  position: absolute;
+  top: 320px;
+  left: 600px;
+}
+
+.forcereklam h4{
+  position: absolute;
+  color: white;
+  font-size: x-large;
+  opacity: 0.5;
+  right: 715px;
+  top: 527px;
+}
+
+.forcereklam img{
+  width: 316px;
+}
+
+.forcereklam{
+  position: absolute;
+  top: 258px;
+  right: 0px;
+}
+
+.hesaplama{
+  position: absolute;
+  right: 4px;
+  top: 114px; 
+  text-align: center;
+  justify-content: right;
+  left: 1200px;
+  background-color: white;
+  width: 319px;
+}
+
+.scrollbar {
+    visibility: hidden; 
+}
+
+.borsa{
+    position: relative;
+    top: -12px;
+    left: -162px;
+}
+
+.sen{
+  position: relative;
+    top: 1px;
+    left: 162px;
+}
+
+.navigasyon{
+    position: relative;
+    top: 6px;
+    left: -9px;
+}
+
+.anabaslik h2{
+    text-align: center;
+    position: relative;
+    top: -12px;
+    z-index: -1;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: xx-large;
+}
+
+.ustmenu{
+    position:absolute; top:0px; left:0px; right:0px;
+    border: 1px solid darkgray;
+    background: white;
+    box-sizing: border-box;
+    height: 60px;
+    width: -1000px;
+    z-index: -4;
+}
+
+.container{
+  display: flex;
+  align-items: center;
+  position: fixed;
+  top: 690px;
+  right: 5px;
+  
+}
+
+.section{
+  background-color: #000;
+  color: #fff;
+  height: 36px;
+  width: 36px;
+  margin: 0px 7px 0px;
+  padding: 5px;
+  border-radius: 8px;
+  display: inline-flex;
+  align-items: center;
+  white-space: nowrap;
+  overflow: hidden;
+  box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.9);
+  transition: width 300ms ease-in-out 0s, background-color 300ms linear 200ms;
+}
+
+.icon{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 36px;
+  aspect-ratio: 1 / 1;
+}
+
+a{
+  text-decoration: none;
+}
+
+.section::hover{
+  width: 140px;
+  transition: width 300ms ease-in-out 0s, background-color 100ms linear 0s;
+}
+
+.section::after{
+  content: attr(tooltip);
+  margin-left: 10px;
+}
+
+.facebook:hover{
+  background: #3b5998;
+}
+
+.instagram:hover{
+  background: #3f729b;
+}
+
+.youtube:hover{
+  background: #cd201f;
+}
+
+.twitter:hover{
+  background: #55acee;
+}
+
+.github:hover{
+  background: #00405d;
+}
+
+.sidenav {
+    height: 100%;
+    width: 0; /*Genişliği javascriptle değiştir*/
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden; /*Yatay kaydırmayı devre dışı bırak */
+    transition: 0.5s;/* Sidenav'da kaymaya 0,5 saniye geçiş efekti */
+    padding-top: 60px; /*İçeriği üstten 60 piksel yerleştirin */
+  }
+  
+  .sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+  }
+  /*Menüler üzerine gelince  renklerini değiştirin */
+  
+  .sidenav a:hover {
+    color: #f1f1f1; 
+  }
+  /*Kapat düğmesini konumlandırın ve stillendirin (sağ üst köşe) */
+  
+  .sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+  /* Yüksekliğin 450 pikselden az olduğu daha küçük ekranlarda, 
+  sidenav stilini değiştirin 
+  (daha az dolgu ve daha küçük bir yazı tipi boyutu) */
+  
+  @media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+  }
+
+  .footer {
+    background-color: #1f1f1f;
+    color: #fefefe;
+    position: absolute;
+    width: 101%;
+    top: 67%;
+  }
+  
+  .footer .heading {
+    color: #fefefe;
+    max-width: 1010px;
+    width: 90%;
+    text-transform: uppercase;
+    margin: 0 auto;
+    margin-bottom: 3rem;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  }
+  
+  .footer .content {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 1.5rem;
+  }
+  
+  .footer .content p {
+    margin-bottom: 1.3rem;
+  }
+  
+  .footer .content a {
+    text-decoration: none;
+    color: #fefefe;
+  }
+  
+  .footer .content a:hover {
+    border-bottom: 1px solid #971717;
+  }
+  
+  .footer .content h4 {
+    margin-bottom: 1.3rem;
+    font-size: 19px;
+  }
+  
+
+  @media (max-width: 767px) {
+    .footer .content {
+      display: flex;
+      flex-direction: column;
+      font-size: 14px;
+    }
+  
+    .footer {
+      position: unset;
+    }
+  }
+  
+  @media (min-width: 768px) and (max-width: 1024px) {
+    .footer .content,
+    .footer {
+      font-size: 14px;
+    }
+  }
+  
+  @media (orientation: landscape) and (max-height: 500px) {
+    .footer {
+      position: unset;
+    }
+  }

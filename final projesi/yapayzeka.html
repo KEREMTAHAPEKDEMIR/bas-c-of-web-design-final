@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h4 onclick="myFunction()">FİNANSAL İŞLEM NEDİR</h4>
+    <div id="myDropdown" class="dropdown-content">
+      <ul>
+        <li>Para birimlerinin takası (örneğin, dolar karşılığında euro satın alma)</li>
+        <li>Menkul kıymetlerin satın alınması ve satılması (örneğin, hisse senetleri ve tahviller)</li>
+        <li>Forward, futures ve opsiyon sözleşmeleri gibi vadeli işlemler</li>
+      </ul>
+    </div>
+    
+    <style>
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: #f1f1f1;
+      min-width: 160px;
+      box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+      z-index: 1;
+    }
+    </style>
+    
+    <script>
+    function myFunction() {
+      document.getElementById("myDropdown").classList.toggle("show");
+    }
+    </script>
+    
+</body>
+</html>

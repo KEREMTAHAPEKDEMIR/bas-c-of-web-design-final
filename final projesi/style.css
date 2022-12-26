@@ -1,179 +1,146 @@
-.btc{
-  position: absolute;
-  top: 120px;
-  right: 20px;
-  z-index: -1;
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,900&display=swap');
+
+body{
+    background: url(https://cdn.pixabay.com/photo/2020/08/09/14/25/business-5475660_960_720.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
 }
 
-.hesaplama{
-  position: absolute;
-  right: 1px;
-}
-.scrollbar {
-    visibility: hidden; 
+*{
+    margin: 0;
+    padding: 0;
 }
 
-.borsa{
-    position: relative;
-    top: 43px;
-    left: -162px;
+.container .navbar{
+    width: 100%;
+    height: 90px;
+    background-color: rgba(255, 0, 0, 0.8);
+    background-size: auto;
+    
 }
 
-.sen{
-  position: relative;
-    top: 1px;
-    left: 162px;
+.navbar .logo{
+    display: inline-block;
+    margin-left: 80px;
+    margin-top: 30px;
 }
 
-.zaza{
-    position: relative;
-    top: 61px;
-    left: -9px;
-}
-
-.anabaslik h2{
-    text-align: center;
-    position: relative;
-    top: 10px;
-    z-index: -1;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: xx-large;
-}
-
-.ustmenu{
-    position:absolute; top:0px; left:0px; right:0px;
-    border: 1px solid darkgray;
-    background: white;
-    box-sizing: border-box;
-    height: 110px;
-    width: -1000px;
-    z-index: -4;
-}
-
-.container{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: fixed;
-  top: 690px;
-  right: 5px;
-  
-}
-
-.section{
-  background-color: #000;
-  color: #fff;
-  height: 36px;
-  width: 36px;
-  margin: 0px 7px 0px;
-  padding: 5px;
-  border-radius: 8px;
-  display: inline-flex;
-  align-items: center;
-  white-space: nowrap;
-  overflow: hidden;
-  box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.9);
-  transition: width 300ms ease-in-out 0s, background-color 300ms linear 200ms;
-}
-
-.icon{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 36px;
-  aspect-ratio: 1 / 1;
-}
-
-a{
-  text-decoration: none;
-}
-
-.section::hover{
-  width: 140px;
-  transition: width 300ms ease-in-out 0s, background-color 100ms linear 0s;
-}
-
-.section::after{
-  content: attr(tooltip);
-  margin-left: 10px;
-}
-
-.facebook:hover{
-  background: #3b5998;
-}
-
-.instagram:hover{
-  background: #3f729b;
-}
-
-.youtube:hover{
-  background: #cd201f;
-}
-
-.twitter:hover{
-  background: #55acee;
-}
-
-.github:hover{
-  background: #00405d;
-}
-
-.sidenav {
-    height: 100%;
-    width: 0; /*Genişliği javascriptle değiştir*/
-    position: fixed;
-    z-index: 1;
-    top: 0;
-    left: 0;
-    background-color: #111;
-    overflow-x: hidden; /*Yatay kaydırmayı devre dışı bırak */
-    transition: 0.5s;/* Sidenav'da kaymaya 0,5 saniye geçiş efekti */
-    padding-top: 60px; /*İçeriği üstten 60 piksel yerleştirin */
-  }
-  
-  .sidenav a {
-    padding: 8px 8px 8px 32px;
-    text-decoration: none;
-    font-size: 25px;
-    color: #818181;
-    display: block;
-    transition: 0.3s;
-  }
-  /*Menüler üzerine gelince  renklerini değiştirin */
-  
-  .sidenav a:hover {
-    color: #f1f1f1; 
-  }
-  /*Kapat düğmesini konumlandırın ve stillendirin (sağ üst köşe) */
-  
-  .sidenav .closebtn {
+.container .navbar .logo img{
     position: absolute;
-    top: 0;
-    right: 25px;
-    font-size: 36px;
-    margin-left: 50px;
-  }
-  /* Yüksekliğin 450 pikselden az olduğu daha küçük ekranlarda, 
-  sidenav stilini değiştirin 
-  (daha az dolgu ve daha küçük bir yazı tipi boyutu) */
-  
-  @media screen and (max-height: 450px) {
-    .sidenav {padding-top: 15px;}
-    .sidenav a {font-size: 18px;}
-  }
+    height: 80px;
+    top: 10px;
+    left: 10px;
+}
 
-  .footer {
+.navbar ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 9px;
+    line-height: 112px;
+}
+
+.navbar ul li a{
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-size: 10px;
+    padding: 3px 6px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.navbar ul{
+    float: right;
+    margin-right: 20px;
+}
+
+.navbar ul li a.active,
+.navbar ul li a:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+    border-radius: 2px;
+}
+
+.container .center{
+    position: absolute;
+    top: 50%;
+    left: 35%;
+    transform: translate(-50%-50%);
+    font-family: sans-serif;
+    user-select: none;
+}
+
+.center h1{
+    position: absolute;
+    color: white;
+    font-size: 500%;
+    top: -100%;
+    left: -35%;
+    text-align: center;
+    font-weight: bold;
+    text-shadow: -4px -6px red;
+}
+
+.center h2{
+    color: white;
+    left: -200%;
+    font-size: 300%;
+    margin-top: -8%;
+    text-shadow: -5px -3px red;
+    top: 50%;
+    
+}
+
+.center .buttons{
+    margin: 6% 36%;
+    top: 50%;
+    width: 50%;
+    
+}
+
+.buttons button{
+    height: 50%;
+    width: 100%;
+    font-size: 18px;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+    background-color: red;
+    border: solid 1px rgb(255, 255, 255);
+    cursor: pointer;
+    outline: none;
+    border-radius: 25px;
+}
+.içerik{
+    position: absolute;
+    color: white;
+    font-size: 200%;
+    top: 25%;
+    left: 0%;
+    text-align: center;
+    font-weight: bold;
+    text-shadow: -1px -3px red;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.içerik .h1{
+    position: absolute;
+    color: white;
+    font-size: 200%;
+    top: -60%;
+    left: 35%;
+    text-align: center;
+    font-weight: bold;
+    text-shadow: -4px -6px red;
+}
+
+.footer {
     background-color: #1f1f1f;
     color: #fefefe;
-    position: relative;
-    width: 101%;
-    bottom: 0;
-    left: -8px;
-    top: 100px;
-    z-index: -1;
-  }
+    position: absolute;
+    width: 100%;
+    top: 67%;
+}
   
-  .footer .heading {
+.footer .heading {
     color: #fefefe;
     max-width: 1010px;
     width: 90%;
@@ -181,43 +148,35 @@ a{
     margin: 0 auto;
     margin-bottom: 3rem;
     font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-  }
+}
   
-  .footer .content {
+.footer .content {
     display: flex;
     justify-content: space-evenly;
     margin: 1.5rem;
-  }
+}
   
-  .footer .content p {
+.footer .content p {
     margin-bottom: 1.3rem;
-  }
+}
   
-  .footer .content a {
+.footer .content a {
     text-decoration: none;
     color: #fefefe;
-  }
+}
   
-  .footer .content a:hover {
+.footer .content a:hover {
     border-bottom: 1px solid #971717;
-  }
+}
   
-  .footer .content h4 {
+.footer .content h4 {
     margin-bottom: 1.3rem;
     font-size: 19px;
-  }
+}
   
-  .footer {
-    text-align: center;
-    margin-bottom: 2rem;
-  }
-  
-  footer hr {
-    margin: 2rem 0;
-  }
-  
-  @media (max-width: 767px) {
-    .footer .content {
+
+@media (max-width: 767px) {
+.footer .content {
       display: flex;
       flex-direction: column;
       font-size: 14px;
@@ -226,9 +185,9 @@ a{
     .footer {
       position: unset;
     }
-  }
+}
   
-  @media (min-width: 768px) and (max-width: 1024px) {
+@media (min-width: 768px) and (max-width: 1024px) {
     .footer .content,
     .footer {
       font-size: 14px;
@@ -239,4 +198,66 @@ a{
     .footer {
       position: unset;
     }
+}
+  
+.footer .enalt p{
+    position: absolute;
+    top: 320px;
+    left: 600px;
+    text-align: center;
+}
+
+.kucuklogo{
+    display: flex;
+    align-items: center;
+    position: fixed;
+    top: 690px;
+    right: 5px;
+    
+  }
+  
+  .section{
+    background-color: #000;
+    color: #fff;
+    height: 36px;
+    width: 36px;
+    margin: 0px 7px 0px;
+    padding: 5px;
+    border-radius: 8px;
+    display: inline-flex;
+    align-items: center;
+    white-space: nowrap;
+    overflow: hidden;
+    box-shadow: 2px 2px 5px rgba(223, 223, 223, 0.9);
+    transition: width 300ms ease-in-out 0s, background-color 300ms linear 200ms;
+  }
+  
+  .icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 36px;
+    aspect-ratio: 1 / 1;
+  }
+  
+  a{
+    text-decoration: none;
+  }
+  
+  .section::hover{
+    width: 140px;
+    transition: width 300ms ease-in-out 0s, background-color 100ms linear 0s;
+  }
+  
+  .section::after{
+    content: attr(tooltip);
+    margin-left: 10px;
+  }
+  
+  .instagram:hover{
+    background: #3f729b;
+  }
+  
+  .github:hover{
+    background: #00405d;
   }
