@@ -39,6 +39,7 @@ body{
     display: inline-block;
     margin: 0 9px;
     line-height: 112px;
+    
 }
 
 .navbar ul li a{
@@ -112,8 +113,8 @@ body{
 .içerik{
     position: absolute;
     color: white;
-    font-size: 200%;
-    top: 25%;
+    font-size: 180%;
+    top: 20%;
     left: 0%;
     text-align: center;
     font-weight: bold;
@@ -124,7 +125,7 @@ body{
 .içerik .h1{
     position: absolute;
     color: white;
-    font-size: 200%;
+    font-size: 100%;
     top: -60%;
     left: 35%;
     text-align: center;
@@ -137,13 +138,13 @@ body{
     color: #fefefe;
     position: absolute;
     width: 100%;
-    top: 67%;
+    top: 72%;
 }
   
 .footer .heading {
     color: #fefefe;
-    max-width: 1010px;
-    width: 90%;
+    max-width: 100px;
+    width: 100%;
     text-transform: uppercase;
     margin: 0 auto;
     margin-bottom: 3rem;
@@ -175,7 +176,7 @@ body{
 }
   
 
-@media (max-width: 767px) {
+@media (max-width: 500px) {
 .footer .content {
       display: flex;
       flex-direction: column;
@@ -208,13 +209,14 @@ body{
 }
 
 .kucuklogo{
-    display: flex;
-    align-items: center;
-    position: fixed;
-    top: 690px;
-    right: 5px;
+  
+  display: flex;
+  align-items: center;
+  position: fixed;
+  top: 690px;
+  right: 5px;
     
-  }
+}
   
   .section{
     background-color: #000;
@@ -261,3 +263,377 @@ body{
   .github:hover{
     background: #00405d;
   }
+
+  .fin {
+    position: absolute;
+    background-color: #1f1f1f;
+    text-align: center;
+    color: white;
+    font-size: 30px;
+    top: 18%;
+    text-shadow: -2px -2px red;
+  }
+
+  .fin ol li{
+    text-align: left;
+  }
+  
+  .terim{
+    position: absolute;
+    background-color: #1f1f1f;
+    text-align: left;
+    color: white;
+    font-size: 30px;
+    top: 18%;
+    text-shadow: -2px -2px red;
+  }
+
+  .terim h4{
+    text-align: center;
+    font-size: 45px;
+  }
+
+  .terim button{
+    background-color: red;
+    color: white;
+  }
+
+  .burger{
+    display: none;
+    cursor: pointer;
+  }
+
+  .burger .line1,
+  .burger .line2,
+  .burger .line3{
+    width: 24px;
+    height: 3px;
+    background-color: white;
+    align: right;
+  }
+
+  .burger .line2{
+    margin: 3px 0px;
+  }
+
+  @media screen and (max-width: 760px){
+    .burger{
+      display: block;
+    }
+  }
+
+  .borne{
+    position: absolute;
+    background-color: #1f1f1f;
+    text-align: center;
+    color: white;
+    font-size: 30px;
+    top: 18%;
+    text-shadow: -2px -2px red;
+  }
+
+  .borne h3{
+    text-align: center;
+    font-size: 45px;
+
+  }
+
+  .borne button{
+    color: white;
+    background-color: red;
+  }
+
+  .fin button{
+    background-color: red;
+    color: white;
+  }
+
+.borter{
+  position: absolute;
+  background-color: #1f1f1f;
+  text-align: center;
+  color: white;
+  font-size: 30px;
+  top: 18%;
+  text-shadow: -2px -2px red;
+}
+
+.borter h3{
+    text-align: center;
+    font-size: 45px;
+}
+
+.borbut button{
+background-color: red;
+  color: white;
+}
+
+.alsat{
+  position: absolute;
+  background-color: #1f1f1f;
+  text-align: center;
+  color: white;
+  top: 18%;
+  text-shadow: -2px -2px red;
+  font-size: 45px;
+}
+
+.borç{
+  position: absolute;
+  background-color: #1f1f1f;
+  text-align: center;
+  color: white;
+  font-size: 45px;
+  top: 18%;
+  text-shadow: -2px -2px red;
+}
+
+.yatırım{
+  position: absolute;
+  background-color: #1f1f1f;
+  text-align: center;
+  color: white;
+  font-size: 45px;
+  top: 18%;
+  text-shadow: -2px -2px red;
+}
+
+.ödeme{
+  position: absolute;
+  background-color: #1f1f1f;
+  text-align: center;
+  color: white;
+  font-size: 45px;
+  top: 18%;
+  text-shadow: -2px -2px red;
+}
+
+.kredi{
+  position: absolute;
+  background-color: #1f1f1f;
+  text-align: center;
+  color: white;
+  font-size: 45px;
+  top: 18%;
+  text-shadow: -2px -2px red;
+}
+
+.faiz{
+  position: absolute;
+  background-color: #1f1f1f;
+  text-align: center;
+  color: white;
+  font-size: 45px;
+  top: 18%;
+  text-shadow: -2px -2px red;
+}
+
+.tahvil{
+  position: absolute;
+  background-color: #1f1f1f;
+  text-align: center;
+  color: white;
+  font-size: 45px;
+  top: 18%;
+  text-shadow: -2px -2px red;
+}
+
+.hissesenedi{
+  position: absolute;
+  background-color: #1f1f1f;
+  text-align: center;
+  color: white;
+  font-size: 45px;
+  top: 18%;
+  text-shadow: -2px -2px red;
+}
+
+.alış{
+  position: absolute;
+  background-color: #1f1f1f;
+  text-align: center;
+  color: white;
+  font-size: 45px;
+  top: 18%;
+  text-shadow: -2px -2px red;
+}
+
+.satış{
+  position: absolute;
+  background-color: #1f1f1f;
+  text-align: center;
+  color: white;
+  font-size: 45px;
+  top: 18%;
+  text-shadow: -2px -2px red;
+}
+
+.kısapozisyon{
+  position: absolute;
+  background-color: #1f1f1f;
+  text-align: center;
+  color: white;
+  font-size: 45px;
+  top: 18%;
+  text-shadow: -2px -2px red;
+}
+
+.uzunpozisyon{
+  position: absolute;
+  background-color: #1f1f1f;
+  text-align: center;
+  color: white;
+  font-size: 45px;
+  top: 18%;
+  text-shadow: -2px -2px red;
+}
+
+.piyasafiyatı{
+  position: absolute;
+  background-color: #1f1f1f;
+  text-align: center;
+  color: white;
+  font-size: 45px;
+  top: 18%;
+  text-shadow: -2px -2px red;
+}
+
+.fiyathareketleri{
+  position: absolute;
+  background-color: #1f1f1f;
+  text-align: center;
+  color: white;
+  font-size: 45px;
+  top: 18%;
+  text-shadow: -2px -2px red;
+}
+
+.spread{
+  position: absolute;
+  background-color: #1f1f1f;
+  text-align: center;
+  color: white;
+  font-size: 45px;
+  top: 18%;
+  text-shadow: -2px -2px red;
+}
+
+.volatilite{
+  position: absolute;
+  background-color: #1f1f1f;
+  text-align: center;
+  color: white;
+  font-size: 45px;
+  top: 18%;
+  text-shadow: -2px -2px red;
+}
+
+.önemir{
+  position: absolute;
+  background-color: #1f1f1f;
+  text-align: center;
+  color: white;
+  font-size: 45px;
+  top: 18%;
+  text-shadow: -2px -2px red;
+}
+
+.limitemir{
+  position: absolute;
+  background-color: #1f1f1f;
+  text-align: center;
+  color: white;
+  font-size: 45px;
+  top: 18%;
+  text-shadow: -2px -2px red;
+}
+
+.stop-loss{
+  position: absolute;
+  background-color: #1f1f1f;
+  text-align: center;
+  color: white;
+  font-size: 45px;
+  top: 18%;
+  text-shadow: -2px -2px red;
+}
+
+.marj{
+  position: absolute;
+  background-color: #1f1f1f;
+  text-align: center;
+  color: white;
+  font-size: 45px;
+  top: 18%;
+  text-shadow: -2px -2px red;
+}
+
+.leveraj{
+  position: absolute;
+  background-color: #1f1f1f;
+  text-align: center;
+  color: white;
+  font-size: 45px;
+  top: 18%;
+  text-shadow: -2px -2px red;
+}
+
+.portföy{
+  position: absolute;
+  background-color: #1f1f1f;
+  text-align: center;
+  color: white;
+  font-size: 45px;
+  top: 18%;
+  text-shadow: -2px -2px red;
+}
+
+.derivatif{
+  position: absolute;
+  background-color: #1f1f1f;
+  text-align: center;
+  color: white;
+  font-size: 45px;
+  top: 18%;
+  text-shadow: -2px -2px red;
+}
+
+.opsiyon{
+  position: absolute;
+  background-color: #1f1f1f;
+  text-align: center;
+  color: white;
+  font-size: 45px;
+  top: 18%;
+  text-shadow: -2px -2px red;
+}
+
+.swap{
+  position: absolute;
+  background-color: #1f1f1f;
+  text-align: center;
+  color: white;
+  font-size: 45px;
+  top: 18%;
+  text-shadow: -2px -2px red;
+}
+
+.fon{
+  position: absolute;
+  background-color: #1f1f1f;
+  text-align: center;
+  color: white;
+  font-size: 45px;
+  top: 18%;
+  text-shadow: -2px -2px red;
+}
+
+.vadeliişlemler{
+  position: absolute;
+  background-color: #1f1f1f;
+  text-align: center;
+  color: white;
+  font-size: 45px;
+  top: 18%;
+  text-shadow: -2px -2px red;
+}
